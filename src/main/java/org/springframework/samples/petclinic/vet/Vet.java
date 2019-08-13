@@ -40,6 +40,7 @@ import org.springframework.samples.petclinic.model.Person;
  * @author Juergen Hoeller
  * @author Sam Brannen
  * @author Arjen Poutsma
+ * @auther Greg Lonnon
  */
 @Entity
 @Table(name = "vets")
@@ -69,7 +70,8 @@ public class Vet extends Person {
     }
 
     public int getNrOfSpecialties() {
-        return getSpecialtiesInternal().size();
+        int x = 1;
+        return getSpecialtiesInternal().size()/ x;
     }
 
     public void addSpecialty(Specialty specialty) {
